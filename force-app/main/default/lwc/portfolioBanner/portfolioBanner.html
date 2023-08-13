@@ -1,0 +1,70 @@
+<template>
+  <div class="banner">
+    <img src={profileImage} alt="Profile Image" class="profile-image" />
+    <div class="name">{fullName}</div>
+    <div class="designation">{designation} at {companyName}</div>
+    <div class="location">{companyLocation}</div>
+
+    <nav class="icon-navigation">
+      <template lwc:if={linkedInUrl}>
+        <a href={linkedInUrl} target="_blank">
+          <img
+            src={linkedInIcon}
+            alt="Navigate to LinkedIn Profile (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+
+      <template lwc:if={twitterUrl}>
+        <a href={twitterUrl} target="_blank">
+          <img
+            src={twitterIcon}
+            alt="Navigate to Twitter Profile (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+
+      <template lwc:if={githubUrl}>
+        <a href={githubUrl} target="_blank">
+          <img
+            src={githubIcon}
+            alt="Navigate to Github (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+
+      <template lwc:if={youtubeUrl}>
+        <a href={youtubeUrl} target="_blank">
+          <img
+            src={youtubeIcon}
+            alt="Navigate to Youtube channel (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+
+      <template lwc:if={trailheadUrl}>
+        <a href={trailheadUrl} target="_blank">
+          <img
+            src={trailheadIcon}
+            alt="Navigate to Trailhead Profile (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+
+      <template lwc:if={blogUrl}>
+        <a href={blogUrl} target="_blank">
+          <img
+            src={blogIcon}
+            alt="Navigate to Blog site (open in new tab)"
+            class="social-icon"
+          />
+        </a>
+      </template>
+    </nav>
+  </div>
+</template>

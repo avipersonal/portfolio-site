@@ -1,0 +1,20 @@
+.accordian-container {
+  background-color: #fff;
+}
+
+.tabs-display-on-desktop {
+  display: block;
+}
+
+.accordian-display-on-mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .tabs-display-on-desktop {
+    display: none;
+  }
+  .accordian-display-on-mobile {
+    display: block;
+  }
+}

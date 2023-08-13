@@ -1,0 +1,10 @@
+.user-detail-and-stats-wrapper-container {
+  background: #1b1919;
+  padding: 16px;
+}
+
+@media (max-width: 720px) {
+  .user-detail-and-stats-wrapper-container {
+    text-align: center;
+  }
+}

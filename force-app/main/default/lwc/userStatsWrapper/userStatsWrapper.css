@@ -1,0 +1,21 @@
+.details-heading {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.details-value {
+  color: #f6c403;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.rank-image {
+  height: 100px;
+}
+
+@media (max-width: 720px) {
+  .rank-image {
+    margin-top: 10px;
+  }
+}

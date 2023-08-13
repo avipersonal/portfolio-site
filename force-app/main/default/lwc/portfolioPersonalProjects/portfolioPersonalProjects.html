@@ -1,0 +1,26 @@
+<template>
+  <lightning-layout multiple-rows>
+    <template lwc:if={projects}>
+      <template for:each={projects} for:item="project">
+        <lightning-layout-item
+          key={project.link}
+          size="12"
+          small-device-size="6"
+          medium-device-size="4"
+          large-device-size="3"
+        >
+          <div class="card">
+            <a href={project.link} target="_blank">
+              <img
+                src={project.img}
+                alt={project.name}
+                style="width: 100%; height: 350px"
+              />
+              <button>{project.name}</button>
+            </a>
+          </div>
+        </lightning-layout-item>
+      </template>
+    </template>
+  </lightning-layout>
+</template>

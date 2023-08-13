@@ -1,0 +1,12 @@
+.skills-heading {
+  color: #fff;
+  background: #191966;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.badge-style {
+  --slds-c-badge-color-background: #f6c403;
+  --slds-c-badge-text-color: #000;
+}

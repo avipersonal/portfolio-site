@@ -2,7 +2,7 @@
   <div class="banner">
     <img src={profileImage} alt="Profile Image" class="profile-image" />
     <div class="name">{fullName}</div>
-    <div class="designation">{designation} at {companyName}</div>
+    <div class="designation">{designation} <template lwc:if={companyName}>at {companyName}</template></div>
     <div class="location">{companyLocation}</div>
 
     <nav class="icon-navigation">
